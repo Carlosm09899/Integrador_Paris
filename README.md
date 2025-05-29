@@ -88,3 +88,47 @@ exit
 Encriptar todas las contraseñas
 config t
 service password-encryption
+```
+## Configuración del Router
+
+### Configuraciones básicas
+```plaintext
+enable
+config t
+enable password HotelParis
+hostname RB
+banner motd ""
+line console 0
+password ci$c0
+exit
+
+Configuración de IPv4 e IPv6
+ipv6 unicast-routing
+interface g0/1
+ip address 172.16.0.61 255.255.255.224
+ipv6 address 2001:db8:1:b::1/64
+ipv6 address FE80::10 link-local
+no shutdown
+description 'toLanB'
+exit
+
+Configuración de contraseña Telnet
+config t
+line vty 0 15
+password 'Tics'
+exit
+
+Configuración SSH
+ip domain-name itsoeh.edu.mx
+username admin password admin
+crypto key generate rsa
+1024
+line vty 0 15
+transport input ssh
+login local
+exit
+
+Encriptar todas las contraseñas
+config t
+service password-encryption
+```

@@ -48,6 +48,8 @@ A nosostros nos corresponde la **segunda subred**, que comienza en la dirección
 
 ![](Topologia/Topologia.png)
 
+Como vemos en nuestra topología estamos utilizando un switch, un router, una PC Servidor y 3 PC Cliente
+
 ## Configuración del Switch
 
 ### Configuraciones básicas
@@ -160,7 +162,7 @@ RB(config)# service password-encryption
 <p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV4 a la PC Cliente 1</p>
 
 <img src="PCCliente1/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
-<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC CLiente 1</p>
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC Cliente 1</p>
 
 ### PC Cliente 2
 
@@ -168,7 +170,7 @@ RB(config)# service password-encryption
 <p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV4 a la PC Cliente 2</p>
 
 <img src="PCCliente2/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
-<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC CLiente 2</p>
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC Cliente 2</p>
 
 ### PC Cliente 3
 
@@ -176,4 +178,4 @@ RB(config)# service password-encryption
 <p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV4 a la PC Cliente 3</p>
 
 <img src="PCCliente3/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
-<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC CLiente 3</p>
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC Cliente 3</p>

@@ -41,4 +41,11 @@ Las subredes resultantes con máscara `/27` son las siguientes:
 
 A nosostros nos corresponde la **segunda subred**, que comienza en la dirección **`172.16.0.32`** (dirección de red) y finaliza en **`172.16.0.63`** (dirección de broadcast). Las **direcciones IP utilizables** dentro de este segmento son desde **`172.16.0.33`** hasta **`172.16.0.62`**, lo que nos proporciona un total de **30 direcciones IP disponibles** para asignar a dispositivos dentro de esta subred.
 
+- Dirección IPV6 global: 2001:DB8:1:b::64                                                                                                
+- Dirección IPV6 Local:                                                                                                                 FE80::/10
+
+## Topología de nuestra Red
+
+![](Topologia/Topologia.png)
+
 

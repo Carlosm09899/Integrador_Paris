@@ -48,4 +48,43 @@ A nosostros nos corresponde la **segunda subred**, que comienza en la dirección
 
 ![](Topologia/Topologia.png)
 
+## Configuración del Switch
 
+### Configuraciones básicas
+```plaintext
+enable
+config t
+enable password HotelParis
+hostname SWB
+banner motd ''
+line console 0
+password ci$co
+exit
+
+Configuración de IPv4 e IPv6
+interface vlan 1
+ip address 172.16.0.62 255.255.255.224
+ipv6 address 2001:db8:1:b::2/64 
+ipv6 address FE80::10 link-local
+no shutdown
+description "toAdmin"
+
+Configuración de contraseña Telnet
+config t
+line vty 0 15
+password ''
+exit
+
+Configuración SSH
+ip domain-name itsoeh.edu.mx
+username admin password admin
+crypto key generate rsa
+1024
+line vty 0 15
+transport input ssh
+login local
+exit
+
+Encriptar todas las contraseñas
+config t
+service password-encryption

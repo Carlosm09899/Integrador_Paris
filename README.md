@@ -52,83 +52,80 @@ A nosostros nos corresponde la **segunda subred**, que comienza en la dirección
 
 ### Configuraciones básicas
 ```plaintext
-enable
-config t
-enable password HotelParis
-hostname SWB
-banner motd ''
-line console 0
-password ci$co
-exit
+Switch> enable
+Switch# config t
+Switch(config)# enable password HotelParis
+Switch(config)# hostname SWB
+SWB(config)# banner motd ''
+SWB(config)# line console 0
+SWB(config-line)# password ci$co
+SWB(config-line)# exit
 
 Configuración de IPv4 e IPv6
-interface vlan 1
-ip address 172.16.0.62 255.255.255.224
-ipv6 address 2001:db8:1:b::2/64 
-ipv6 address FE80::10 link-local
-no shutdown
-description "toAdmin"
+SWB(config)# interface vlan 1
+SWB(config-if)# ip address 172.16.0.62 255.255.255.224
+SWB(config-if)# ipv6 address 2001:db8:1:b::2/64 
+SWB(config-if)# ipv6 address FE80::10 link-local
+SWB(config-if)# no shutdown
+SWB(config-if)# description "toAdmin"
+SWB(config-if)# exit
 
 Configuración de contraseña Telnet
-config t
-line vty 0 15
-password ''
-exit
+SWB(config)# line vty 0 15
+SWB(config-line)# password 
+SWB(config-line)# exit
 
 Configuración SSH
-ip domain-name itsoeh.edu.mx
-username admin password admin
-crypto key generate rsa
-1024
-line vty 0 15
-transport input ssh
-login local
-exit
+SWB(config)# ip domain-name itsoeh.edu.mx
+SWB(config)# username admin password admin
+SWB(config)# crypto key generate rsa
+How many bits in the modulus [512]: 1024
+SWB(config)# line vty 0 15
+SWB(config-line)# transport input ssh
+SWB(config-line)# login local
+SWB(config-line)# exit
 
 Encriptar todas las contraseñas
-config t
-service password-encryption
+SWB(config)# service password-encryption
 ```
 ## Configuración del Router
 
 ### Configuraciones básicas
 ```plaintext
-enable
-config t
-enable password HotelParis
-hostname RB
-banner motd ""
-line console 0
-password ci$c0
-exit
+Router> enable
+Router# config t
+Router(config)# enable password HotelParis
+Router(config)# hostname RB
+RB(config)# banner motd ""
+RB(config)# line console 0
+RB(config-line)# password ci$c0
+RB(config-line)# exit
 
 Configuración de IPv4 e IPv6
-ipv6 unicast-routing
-interface g0/1
-ip address 172.16.0.61 255.255.255.224
-ipv6 address 2001:db8:1:b::1/64
-ipv6 address FE80::10 link-local
-no shutdown
-description 'toLanB'
-exit
+RB(config)# ipv6 unicast-routing
+RB(config)# interface g0/1
+RB(config-if)# ip address 172.16.0.61 255.255.255.224
+RB(config-if)# ipv6 address 2001:db8:1:b::1/64
+RB(config-if)# ipv6 address FE80::10 link-local
+RB(config-if)# no shutdown
+RB(config-if)# description 'toLanB'
+RB(config-if)# exit
 
 Configuración de contraseña Telnet
-config t
-line vty 0 15
-password 'Tics'
-exit
+RB(config)# line vty 0 15
+RB(config-line)# password Tics
+RB(config-line)# exit
 
 Configuración SSH
-ip domain-name itsoeh.edu.mx
-username admin password admin
-crypto key generate rsa
-1024
-line vty 0 15
-transport input ssh
-login local
-exit
+RB(config)# ip domain-name itsoeh.edu.mx
+RB(config)# username admin password admin
+RB(config)# crypto key generate rsa
+How many bits in the modulus [512]: 1024
+RB(config)# line vty 0 15
+RB(config-line)# transport input ssh
+RB(config-line)# login local
+RB(config-line)# exit
 
 Encriptar todas las contraseñas
-config t
-service password-encryption
+RB(config)# service password-encryption
 ```

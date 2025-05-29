@@ -131,9 +131,17 @@ RB(config)# service password-encryption
 ```
 
 ## Prueba de Conectividad (Ping)
-
+### Router
 <img src="Router/Ipv4.png" alt="Una captura de pantalla de un ping exitoso" width="400">
 <p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV4 al Router</p>
 
 <img src="Router/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
 <p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 al Router</p>
+
+### Switch
+
+<img src="Switch/Ipv4.png" alt="Una captura de pantalla de un ping exitoso" width="400">
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV4 al Switch</p>
+
+<img src="Switch/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 al Switch</p>

@@ -1,4 +1,4 @@
-## Proyecto Integrador Motel París
+## Proyecto Integrador Hotel París
 
 # Integrantes
 * Carmen Anahí Cornejo López 230110084

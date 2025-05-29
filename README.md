@@ -17,7 +17,7 @@ El sistema se implementará utilizando C# para el desarrollo de las interfaces d
 
 ## ¿Cómo implementaremos nuestro proyecto?
 
-La implementación contará con 8 sencillas fases, las cuales son los siguientes: 
+La implementación contará con 4 sencillas fases, las cuales son los siguientes: 
 
 1. **Análisis y diseño del sistema:** En esta fase nos encargaremos dentificar las necesidades del hotel relacionadas con la gestión de reservaciones, personal, tickets y servicios, de igual manera nos encargaremos de estructurar nuestra base de datos.
 

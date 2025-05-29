@@ -129,3 +129,8 @@ RB(config-line)# exit
 Encriptar todas las contraseñas
 RB(config)# service password-encryption
 ```
+
+## Prueba de Conectividad (Ping)
+
+![Ping al router con IPV4](Router/Ipv4.png)
+![Ping al router con IPV6](Router/Ipv6.png)

@@ -145,3 +145,11 @@ RB(config)# service password-encryption
 
 <img src="Switch/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
 <p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 al Switch</p>
+
+### PC Cliente
+
+<img src="PC1(servidor)/Ipv4.png" alt="Una captura de pantalla de un ping exitoso" width="400">
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV4 a la PC Cliente</p>
+
+<img src="PC1(servidor)/Ipv6.png" alt="Una captura de pantalla de un ping exitoso" width="400">
+<p style="display: inline-block; vertical-align: top; margin-left: 10px;">Ping con dirección IPV6 a la PC CLiente</p>
